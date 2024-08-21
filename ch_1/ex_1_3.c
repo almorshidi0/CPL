@@ -2,8 +2,7 @@
 
 /* print Fahrenheit−Celsius table
     for fahr = 0, 20, ..., 300; floating−point version */
-main()
-{
+void main(){
     float fahr, celsius;
     float lower, upper, step;
 
@@ -13,8 +12,7 @@ main()
 
     fahr = lower;
     printf("Fahr\tCelsius\n");
-    while(fahr <= upper)
-    {
+    while(fahr <= upper){
         celsius = (5.0 / 9.0) * (fahr - 32.0);
         printf("%4.0f\t%7.1f\n", fahr, celsius);
         fahr = fahr + step;

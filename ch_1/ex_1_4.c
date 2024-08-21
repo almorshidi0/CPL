@@ -2,8 +2,7 @@
 
 /* print Celsius-Fahrenheit table
     for celsius = 0, 20, ..., 300; floating−point version */
-main()
-{
+void main(){
     float fahr, celsius;
     float lower, upper, step;
 
