@@ -2,8 +2,10 @@
 
 unsigned rightrot(unsigned x, int n);
 
-void main(void){
+int main(){
     printf("%d\n", rightrot(241, 3));
+
+    return 0;
 }
 
 unsigned rightrot(unsigned x, int n){
