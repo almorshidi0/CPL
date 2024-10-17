@@ -4,7 +4,6 @@
 int my_getline(char line[], int maxline);
 int htoi(char line[], int len);
 
-/* print the longest input line */
 int main(){
     int len;                /* current line length */
     char line[MAXLINE];     /* current input line */
