@@ -3,7 +3,7 @@
 #define TAB_SIZE 8
 #define TAB_STOP (TAB_SIZE - 1)
 
-int getline(char line[], int maxline);
+int our_getline(char line[], int maxline);
 void entab(char to[], char from[], int len);
 
 /* print the entabbed line */
@@ -14,7 +14,7 @@ int main(){
     char entabbed[MAXLINE];  /* entabbed line saved here */
     
     max = 0;
-    while((len = getline(line, MAXLINE)) > 0){
+    while((len = our_getline(line, MAXLINE)) > 0){
         entab(entabbed, line, len);
         printf("%s", entabbed);
     }
@@ -22,8 +22,8 @@ int main(){
     return 0;
 }
 
-/* getline: read a line into s, return length */
-int getline(char s[], int lim){
+/* our_getline: read a line into s, return length */
+int our_getline(char s[], int lim){
     int c, i;
 
     for(i = 0; i < lim - 1 && (c = getchar()) != EOF && c != '\n'; ++i)

@@ -2,7 +2,7 @@
 #define MAXLINE 1000    /* maximum input line length */
 #define OUT_MAXLINE 80
 
-int getline(char line[], int maxline);
+int our_getline(char line[], int maxline);
 void fold(char to[], char from[], int len);
 void copy(char to[], char from[]);
 
@@ -14,15 +14,15 @@ int main(){
     char folded[MAXLINE];  /* folded lines saved here */
     
     max = 0;
-    while((len = getline(line, MAXLINE)) > 0){
+    while((len = our_getline(line, MAXLINE)) > 0){
         printf("%s", line);
     }
     
     return 0;
 }
 
-/* getline: read a line into s, return length */
-int getline(char s[], int lim){
+/* our_getline: read a line into s, return length */
+int our_getline(char s[], int lim){
     int c = 0, i = 0, last_blank = -1, last_line_break = -1;
 
     for(i = 0; i < lim - 1 && (c = getchar()) != EOF && c != '\n'; ++i){

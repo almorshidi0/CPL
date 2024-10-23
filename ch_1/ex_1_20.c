@@ -2,7 +2,7 @@
 #define MAXLINE 1000    /* maximum input line length */
 #define TAB_SIZE 8
 
-int getline(char line[], int maxline);
+int our_getline(char line[], int maxline);
 void detab(char to[], char from[], int len);
 
 /* print the detabbed line */
@@ -13,7 +13,7 @@ int main(){
     char detabbed[MAXLINE];  /* detabbed line saved here */
     
     max = 0;
-    while((len = getline(line, MAXLINE)) > 0){
+    while((len = our_getline(line, MAXLINE)) > 0){
         detab(detabbed, line, len);
         printf("%s", detabbed);
     }
@@ -21,8 +21,8 @@ int main(){
     return 0;
 }
 
-/* getline: read a line into s, return length */
-int getline(char s[], int lim){
+/* our_getline: read a line into s, return length */
+int our_getline(char s[], int lim){
     int c, i;
 
     for(i = 0; i < lim - 1 && (c = getchar()) != EOF && c != '\n'; ++i)

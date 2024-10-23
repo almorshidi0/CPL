@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define MAXLINE 1000    /* maximum input line length */
 
-int getline(char line[], int maxline);
+int our_getline(char line[], int maxline);
 int delete_trailing(char line[], int len);
 
 /* print the longest input line */
@@ -9,7 +9,7 @@ int main(){
     int len;                /* current line length */
     char line[MAXLINE];     /* current input line */
     
-    while((len = getline(line, MAXLINE)) > 0){
+    while((len = our_getline(line, MAXLINE)) > 0){
         if(len > 0){
             len = delete_trailing(line, len);
             if(len > 0)
@@ -20,8 +20,8 @@ int main(){
     return 0;
 }
 
-/* getline: read a line into s, return length */
-int getline(char s[], int lim){
+/* our_getline: read a line into s, return length */
+int our_getline(char s[], int lim){
     int c, i;
 
     for(i = 0; i < lim - 1 && (c = getchar()) != EOF && c != '\n'; ++i)
