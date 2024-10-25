@@ -6,7 +6,8 @@ int strindex(char source[], char searchfor[]);
 
 char pattern[] = "ould";
 
-int main(){
+int main()
+{
     char line[MAXLINE];
     int index = 0;
 
@@ -20,7 +21,8 @@ int main(){
     return 0;
 }
 
-int our_getline(char s[], int lim){
+int our_getline(char s[], int lim)
+{
     int c, i;
     
     i = 0;
@@ -35,7 +37,8 @@ int our_getline(char s[], int lim){
     return i;
 }
 
-int strindex(char s[], char t[]){
+int strindex(char s[], char t[])
+{
     int i, j, k, index = -1;
 
     for (i = 0; s[i] != '\0'; i++){

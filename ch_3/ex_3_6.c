@@ -6,7 +6,8 @@
 void reverse(char s[]);
 void itoa(int n, char s[], int field);
 
-int main(){
+int main()
+{
     int num = 21474;
     char result[20];
     itoa(num, result, 8);
@@ -20,7 +21,8 @@ int main(){
 }
 
 /* itoa: convert n to characters in s */
-void itoa(int n, char s[], int field){
+void itoa(int n, char s[], int field)
+{
     int i, sign;
 
     sign = n;
@@ -41,7 +43,8 @@ void itoa(int n, char s[], int field){
 }
 
 /* reverse: reverse string s in place */
-void reverse(char s[]){
+void reverse(char s[])
+{
     int c, i, j;
     for (i = 0, j = strlen(s)-1; i < j; i++, j--){
         c = s[i];

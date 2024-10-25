@@ -26,7 +26,8 @@
 #define MY_UINT_MAX     ((unsigned  int)    ALL_HIGH_LONG)
 #define MY_ULONG_MAX    ((unsigned  long)   ALL_HIGH_LONG)
 
-int main(){
+int main()
+{
     printf("integer types through calculation:\n\n");
 
     printf("Minimum Signed Char     %hhd\n",    MY_SCHAR_MIN);

@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-void main(){
+void main()
+{
     char c;
     char lastc = 'a';
 

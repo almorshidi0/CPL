@@ -7,7 +7,8 @@ void fold(char to[], char from[], int len);
 void copy(char to[], char from[]);
 
 /* print the folded lines */
-int main(){
+int main()
+{
     int len;                /* current line length */
     int max;                /* maximum length seen so far */
     char line[MAXLINE];     /* current input line */
@@ -22,7 +23,8 @@ int main(){
 }
 
 /* our_getline: read a line into s, return length */
-int our_getline(char s[], int lim){
+int our_getline(char s[], int lim)
+{
     int c = 0, i = 0, last_blank = -1, last_line_break = -1;
 
     for(i = 0; i < lim - 1 && (c = getchar()) != EOF && c != '\n'; ++i){

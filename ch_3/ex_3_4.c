@@ -6,7 +6,8 @@
 void reverse(char s[]);
 void itoa(int n, char s[]);
 
-int main(){
+int main()
+{
     int num = 2147483647; // Max value for a 32-bit signed integer
     char result[20];
     itoa(num, result);
@@ -20,7 +21,8 @@ int main(){
 }
 
 /* itoa: convert n to characters in s */
-void itoa(int n, char s[]){
+void itoa(int n, char s[])
+{
     int i, sign;
 
     sign = n;
@@ -38,7 +40,8 @@ void itoa(int n, char s[]){
 }
 
 /* reverse: reverse string s in place */
-void reverse(char s[]){
+void reverse(char s[])
+{
     int c, i, j;
     for (i = 0, j = strlen(s)-1; i < j; i++, j--){
         c = s[i];

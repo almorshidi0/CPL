@@ -5,7 +5,8 @@
 #define MAX_WORD_LENGTH 20 /* Maximum characters in a word*/
 #define MAX_WORDS 100 /* Maximum number of words */
 
-void main(int argc, char **argv){
+void main(int argc, char **argv)
+{
     if(argc == 2){
         char c = 0, state = 0;
         if((argv[1][0] == 'h')){

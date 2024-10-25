@@ -4,7 +4,8 @@
 int my_getline(char line[], int maxline);
 void squeeze(char line[], char chars[]);
 
-int main(){
+int main()
+{
     int len1, len2;                /* current line length */
     char line[MAXLINE];     /* current input line */
     char chars[MAXLINE];
@@ -20,7 +21,8 @@ int main(){
 }
 
 /* my_getline: read a line into s, return length */
-int my_getline(char s[], int lim){
+int my_getline(char s[], int lim)
+{
     int c, i;
 
     for(i = 0; i < lim - 1 && (c = getchar()) != EOF && c != '\n'; ++i)
@@ -30,7 +32,8 @@ int my_getline(char s[], int lim){
     return i;
 }
 
-void squeeze(char line[], char chars[]){
+void squeeze(char line[], char chars[])
+{
     int i, j;
     int k;
 

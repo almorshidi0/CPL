@@ -2,7 +2,8 @@
 #define IN  0   /* inside a word */
 #define OUT 1   /* outside a word */
 
-void main(){
+void main()
+{
     char c, state;
 
     state = OUT;

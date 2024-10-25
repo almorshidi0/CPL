@@ -3,7 +3,8 @@
 
 #define MAXLINE 100
 
-int main(){
+int main()
+{
     double sum, atof(char []);
     char line[MAXLINE];
     int  our_getline(char line[], int max);
@@ -16,7 +17,8 @@ int main(){
 }
 
 /*  our_getline: get line into s, return length */
-int  our_getline(char s[], int lim){
+int  our_getline(char s[], int lim)
+{
     int c, i;
     
     i = 0;
@@ -31,7 +33,8 @@ int  our_getline(char s[], int lim){
     return i;
 }
 
-double atof(char s[]){
+double atof(char s[])
+{
     double val = 0.0, power = 0.0, epower = 0.0;
     int i = 0, sign = 0, esign = 0;
 

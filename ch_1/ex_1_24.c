@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /* print the folded lines */
-int main(){
+int main()
+{
     char c;
     int parentheses = 0, braces = 0, brackets = 0;
     int lines = 1;

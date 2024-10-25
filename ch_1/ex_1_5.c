@@ -3,7 +3,8 @@
 /* print Fahrenheit−Celsius table
     for fahr = 0, 20, ..., 300; floating−point version
     Reversed Order */
-void main(){
+void main()
+{
     int fahr;
     
     printf("Fahr\tCelsius\n");

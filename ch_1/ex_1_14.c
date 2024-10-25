@@ -2,7 +2,8 @@
 
 #define ALPHABET_SIZE   ('z' - 'a' + 1)
 
-void main(int argc, char **argv){
+void main(int argc, char **argv)
+{
     if(argc == 2){
         char c = 0, index = 0, greatest_char_frequency = 0;
         char char_frequency[ALPHABET_SIZE] = {0};

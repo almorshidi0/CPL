@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /* print the folded lines */
-int main(){
+int main()
+{
     char c;
     
     while((c = getchar()) != EOF){

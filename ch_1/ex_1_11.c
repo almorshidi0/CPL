@@ -3,7 +3,8 @@
 #define OUT 1   /* outside a word */
 
 /* count lines, words, and characters in input */
-void main(){
+void main()
+{
     int c, nl, nw, nc, state;
 
     state = OUT;

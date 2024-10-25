@@ -4,7 +4,8 @@
 void expand(char from[], char to[]);
 int is_letter_or_digit(char c);
 
-int main(){
+int main()
+{
     int len;
     char line[MAXLINE]  = "a-z a-a a-b-c a-z0-9 -a-z A-Z a-f a-d-g - --";
     char expanded[MAXLINE];
@@ -16,7 +17,8 @@ int main(){
     return 0;
 }
 
-void expand(char from[], char to[]){
+void expand(char from[], char to[])
+{
     int i, j;
 
     i = 0;
@@ -38,7 +40,8 @@ void expand(char from[], char to[]){
     to[j] = '\0';
 }
 
-int is_letter_or_digit(char c){
+int is_letter_or_digit(char c)
+{
     if(((c >= 'a') && (c <= 'z')) || ((c >= 'A') && (c <= 'Z')) || ((c >= '0') && (c <= '9')))
         return 1;
     return 0;

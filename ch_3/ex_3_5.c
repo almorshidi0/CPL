@@ -6,7 +6,8 @@
 void reverse(char s[]);
 void itob(int n, char s[], const unsigned int b);
 
-int main(){    
+int main()
+{    
     int number;
     unsigned int base;
     char result[20];
@@ -19,7 +20,8 @@ int main(){
     return 0;
 }
 
-void itob(int n, char s[], const unsigned int b){
+void itob(int n, char s[], const unsigned int b)
+{
     int i = 0;
     
     if(b <= (9 + ALPHABET_SIZE)){
@@ -36,7 +38,8 @@ void itob(int n, char s[], const unsigned int b){
 }
 
 /* reverse: reverse string s in place */
-void reverse(char s[]){
+void reverse(char s[])
+{
     int c, i, j;
     for (i = 0, j = strlen(s)-1; i < j; i++, j--){
         c = s[i];

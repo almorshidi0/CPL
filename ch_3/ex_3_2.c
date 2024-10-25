@@ -4,7 +4,8 @@
 void escape(char to[], char from[]);
 void unescape(char to[], char from[]);
 
-int main(){
+int main()
+{
     int len;
     char line[MAXLINE]  = "Hello,\tworld!\n";
     char escaped[MAXLINE];
@@ -19,7 +20,8 @@ int main(){
     return 0;
 }
 
-void escape(char to[], char from[]){
+void escape(char to[], char from[])
+{
     int i = 0, j = 0;
 
     while((to[j] = from[i]) != '\0'){
@@ -40,7 +42,8 @@ void escape(char to[], char from[]){
     }
 }
 
-void unescape(char to[], char from[]){
+void unescape(char to[], char from[])
+{
     int i = 0, j = 0;
 
     while((to[j] = from[i]) != '\0'){
