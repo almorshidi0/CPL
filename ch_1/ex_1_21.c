@@ -47,7 +47,7 @@ void entab(char to[], char from[], int len)
     
     start = -1;
     count = 0;
-    for(i = 0, j = 0; i < len - 1 && j < MAXLINE - 2; ++i){
+    for(i = 0, j = 0; i < len - 1 && j < len - 2; ++i){
         if(from[i] == ' '){
             if(start == -1){
                 start = i;
